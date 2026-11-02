@@ -1,0 +1,801 @@
+{
+  "schema_version": 1,
+  "repository": "appolon1908/Codestra-TTS-Piper",
+  "scope": "frozen-vendor-documentation-additions-only",
+  "application_source_allowed": false,
+  "reviewed_base_sha": "afbe81f75fc1a74782d9cbf6b5754345a3609073",
+  "reviewed_base_tree": "f1d55a199c13070a1078346d77a1eda1d0d50abe",
+  "baseline_files": [
+    ".dockerignore",
+    ".gitignore",
+    ".isort.cfg",
+    ".projectile",
+    "AGENTS.md",
+    "CHANGELOG.md",
+    "CMakeLists.txt",
+    "COPYING",
+    "Dockerfile",
+    "MANIFEST.in",
+    "README.md",
+    "build_monotonic_align.sh",
+    "docker/entrypoint.sh",
+    "docs/ALIGNMENTS.md",
+    "docs/API_HTTP.md",
+    "docs/API_PYTHON.md",
+    "docs/ARCHITECTURE-CHARTS.md",
+    "docs/BUILDING.md",
+    "docs/CLI.md",
+    "docs/PLANS.md",
+    "docs/TRAINING.md",
+    "docs/VOICES.md",
+    "etc/logo.png",
+    "etc/logo.svg",
+    "libpiper/ .clang-format",
+    "libpiper/.clang-tidy",
+    "libpiper/.gitignore",
+    "libpiper/CMakeLists.txt",
+    "libpiper/ClangTidy.cmake",
+    "libpiper/README.md",
+    "libpiper/include/chinese_phonemizer.h",
+    "libpiper/include/json.hpp",
+    "libpiper/include/piper.h",
+    "libpiper/include/piper_impl.hpp",
+    "libpiper/include/uni_algo.h",
+    "libpiper/src/chinese_phonemizer.cpp",
+    "libpiper/src/main/CMakeLists.txt",
+    "libpiper/src/main/main.cpp",
+    "libpiper/src/main/utils/main_utils.cpp",
+    "libpiper/src/main/utils/main_utils.hpp",
+    "libpiper/src/main/utils/process.cpp",
+    "libpiper/src/main/utils/process.hpp",
+    "libpiper/src/main/utils/wav_headers.cpp",
+    "libpiper/src/main/utils/wav_headers.hpp",
+    "libpiper/src/main/utils/wavfile.cpp",
+    "libpiper/src/main/utils/wavfile.hpp",
+    "libpiper/src/piper.cpp",
+    "libpiper/tests/.clang-tidy",
+    "libpiper/tests/CMakeLists.txt",
+    "libpiper/tests/DownloadModel.cmake",
+    "libpiper/tests/test_main_utils.cpp",
+    "libpiper/tests/test_piper.cpp",
+    "libpiper/tests/test_process.cpp",
+    "libpiper/tests/test_wav_headers.cpp",
+    "libpiper/tests/test_wavfile.cpp",
+    "libpiper/tests/utils/piper_test_assets.cpp",
+    "libpiper/tests/utils/piper_test_assets.h",
+    "licenses/LICENSE.g2pW-Apache-2.0",
+    "mypy.ini",
+    "pylintrc",
+    "pyproject.toml",
+    "pytest.ini",
+    "script/dev_build",
+    "script/download_voices",
+    "script/export",
+    "script/format",
+    "script/lint",
+    "script/package",
+    "script/run",
+    "script/run_http_server",
+    "script/setup",
+    "script/test",
+    "script/train",
+    "setup.cfg",
+    "setup.py",
+    "src/piper/__init__.py",
+    "src/piper/__main__.py",
+    "src/piper/audio_playback.py",
+    "src/piper/config.py",
+    "src/piper/const.py",
+    "src/piper/download_voices.py",
+    "src/piper/espeakbridge.c",
+    "src/piper/espeakbridge.pyi",
+    "src/piper/g2pw_onnx.py",
+    "src/piper/hebrew/LICENSE",
+    "src/piper/hebrew/SOURCE",
+    "src/piper/hebrew/__init__.py",
+    "src/piper/hebrew/hebrew_ipa.py",
+    "src/piper/hebrew/nakdimon.onnx",
+    "src/piper/http_server.py",
+    "src/piper/img/logo.png",
+    "src/piper/img/ohf-library.png",
+    "src/piper/lithuanian/LICENSE",
+    "src/piper/lithuanian/SOURCE",
+    "src/piper/lithuanian/lt_kirciai.tsv",
+    "src/piper/lithuanian/lt_kreipiniai.tsv",
+    "src/piper/lithuanian/lt_raides.tsv",
+    "src/piper/patch_voice_with_alignment.py",
+    "src/piper/phoneme_ids.py",
+    "src/piper/phonemize_chinese.py",
+    "src/piper/phonemize_espeak.py",
+    "src/piper/phonemize_hebrew.py",
+    "src/piper/phonemize_japanese.py",
+    "src/piper/phonemize_lithuanian.py",
+    "src/piper/phonemize_thai.py",
+    "src/piper/py.typed",
+    "src/piper/tashkeel/LICENSE",
+    "src/piper/tashkeel/SOURCE",
+    "src/piper/tashkeel/__init__.py",
+    "src/piper/tashkeel/hint_id_map.json",
+    "src/piper/tashkeel/input_id_map.json",
+    "src/piper/tashkeel/model.onnx",
+    "src/piper/tashkeel/target_id_map.json",
+    "src/piper/templates/index.html",
+    "src/piper/train/__init__.py",
+    "src/piper/train/__main__.py",
+    "src/piper/train/export_generator.py",
+    "src/piper/train/export_onnx.py",
+    "src/piper/train/infer_torch.py",
+    "src/piper/train/vits/__init__.py",
+    "src/piper/train/vits/attentions.py",
+    "src/piper/train/vits/commons.py",
+    "src/piper/train/vits/config.py",
+    "src/piper/train/vits/dataset.py",
+    "src/piper/train/vits/lightning.py",
+    "src/piper/train/vits/losses.py",
+    "src/piper/train/vits/mel_processing.py",
+    "src/piper/train/vits/models.py",
+    "src/piper/train/vits/modules.py",
+    "src/piper/train/vits/monotonic_align/Makefile",
+    "src/piper/train/vits/monotonic_align/__init__.py",
+    "src/piper/train/vits/monotonic_align/core.pyx",
+    "src/piper/train/vits/monotonic_align/setup.py",
+    "src/piper/train/vits/mos.py",
+    "src/piper/train/vits/transforms.py",
+    "src/piper/train/vits/utils.py",
+    "src/piper/voice.py",
+    "tests/__init__.py",
+    "tests/generate_test_voice.py",
+    "tests/test_chinese_phonemizer.py",
+    "tests/test_download_voices.py",
+    "tests/test_espeak_phonemizer.py",
+    "tests/test_hebrew_phonemizer.py",
+    "tests/test_japanese_phonemizer.py",
+    "tests/test_lithuanian_phonemizer.py",
+    "tests/test_piper.py",
+    "tests/test_tashkeel.py",
+    "tests/test_thai_phonemizer.py",
+    "tests/test_voice.onnx",
+    "tests/test_voice.onnx.json",
+    "tox.ini"
+  ],
+  "frozen_entries": {
+    ".dockerignore": {
+      "mode": "100644",
+      "blob": "09120e7f42d903c7ed9703daaf992ff798ce3002"
+    },
+    ".gitignore": {
+      "mode": "100644",
+      "blob": "82341e99946480caf1156e00c609a2f1d2d1360e"
+    },
+    ".isort.cfg": {
+      "mode": "100644",
+      "blob": "ba2778dc8ca7ca3268816639a2ea3c69df3405d8"
+    },
+    ".projectile": {
+      "mode": "100644",
+      "blob": "94615a45c1ffe04f20d6530c3056cf24aced1722"
+    },
+    "AGENTS.md": {
+      "mode": "100644",
+      "blob": "06794078bb3167f75933267527c5c63e113708bf"
+    },
+    "CHANGELOG.md": {
+      "mode": "100644",
+      "blob": "e8d259cbddcd8f4d622ec44e94e7d07012fa392a"
+    },
+    "CMakeLists.txt": {
+      "mode": "100644",
+      "blob": "fac0d4c97c3e8ed944980eb09be895f445c859f7"
+    },
+    "COPYING": {
+      "mode": "100644",
+      "blob": "10926e87f113fb026c366866d6fa466061562870"
+    },
+    "Dockerfile": {
+      "mode": "100644",
+      "blob": "5dfc3373626ee5c05f8f1c71d9ac955e5ab64658"
+    },
+    "MANIFEST.in": {
+      "mode": "100644",
+      "blob": "e2e36d6a3a76298240689138d66f15fd6e46583d"
+    },
+    "README.md": {
+      "mode": "100644",
+      "blob": "cce5c4c5883ec65bca085727dc822602301af0fe"
+    },
+    "build_monotonic_align.sh": {
+      "mode": "100755",
+      "blob": "30fcc050a03784b05ce5f9308e14e9f859cca806"
+    },
+    "docker/entrypoint.sh": {
+      "mode": "100755",
+      "blob": "2a6a4eded9cad6956736422b9798a85cc47943a7"
+    },
+    "docs/ALIGNMENTS.md": {
+      "mode": "100644",
+      "blob": "578ff6eaead7cc0e4cf1ea10f9299030391127f1"
+    },
+    "docs/API_HTTP.md": {
+      "mode": "100644",
+      "blob": "0146be2d0e3506436ed4342107bbc7cb9a406cb6"
+    },
+    "docs/API_PYTHON.md": {
+      "mode": "100644",
+      "blob": "c818824083196893600c8b4e52265e6f1a64e37f"
+    },
+    "docs/ARCHITECTURE-CHARTS.md": {
+      "mode": "100644",
+      "blob": "875b3753d7e92467d34221349031b5407ecfe262"
+    },
+    "docs/BUILDING.md": {
+      "mode": "100644",
+      "blob": "b3193ae793a11a413a190d262d568a8ce3e59475"
+    },
+    "docs/CLI.md": {
+      "mode": "100644",
+      "blob": "a5fffb12fb678dfc3c7b8f045ddd4a2eec5a9d12"
+    },
+    "docs/PLANS.md": {
+      "mode": "100644",
+      "blob": "c5fdd5859df9a5c29592dce96339fb7707fb2eb2"
+    },
+    "docs/TRAINING.md": {
+      "mode": "100644",
+      "blob": "d47929de6c0e2a21967ac19aa10e92d2cd5e3218"
+    },
+    "docs/VOICES.md": {
+      "mode": "100644",
+      "blob": "91267b225d3efe3e2d841813209bf5d52c0491a1"
+    },
+    "etc/logo.png": {
+      "mode": "100644",
+      "blob": "2b276be25ab30c51bb156a4a365e1a79a35937f7"
+    },
+    "etc/logo.svg": {
+      "mode": "100644",
+      "blob": "87a1d6f6664ad08b71b8f9961abda23503559b8c"
+    },
+    "libpiper/ .clang-format": {
+      "mode": "100644",
+      "blob": "b69fdf08a7ac7b596e42c458755c09bcc7c1cdc9"
+    },
+    "libpiper/.clang-tidy": {
+      "mode": "100644",
+      "blob": "42997b3d36ded30e19064b69a5600bf651f72365"
+    },
+    "libpiper/.gitignore": {
+      "mode": "100644",
+      "blob": "eb757ce1697d9b8bd848ee4353119c8f57cad3e5"
+    },
+    "libpiper/CMakeLists.txt": {
+      "mode": "100644",
+      "blob": "d43e7144d3fa027b52238972ef829a3444cbc212"
+    },
+    "libpiper/ClangTidy.cmake": {
+      "mode": "100644",
+      "blob": "da6b6ba467968861ae62ee1fc95c2bcdf4be1549"
+    },
+    "libpiper/README.md": {
+      "mode": "100644",
+      "blob": "d880f57579a38481be3481f6fd05f95e07a46c14"
+    },
+    "libpiper/include/chinese_phonemizer.h": {
+      "mode": "100644",
+      "blob": "76ec16efbfc15098d2104332d166d979524722c9"
+    },
+    "libpiper/include/json.hpp": {
+      "mode": "100644",
+      "blob": "4d1a37ad7cb874769d911fc3362d567da3aca291"
+    },
+    "libpiper/include/piper.h": {
+      "mode": "100644",
+      "blob": "398b2da029d3455f612570fa1f81f7e7b0fea6f1"
+    },
+    "libpiper/include/piper_impl.hpp": {
+      "mode": "100644",
+      "blob": "f02eec0dd2c70e1d93c98159a40f73a879fae74b"
+    },
+    "libpiper/include/uni_algo.h": {
+      "mode": "100644",
+      "blob": "3f35a3dd8bda06ef1cae875eb4f31d801a14a7f4"
+    },
+    "libpiper/src/chinese_phonemizer.cpp": {
+      "mode": "100644",
+      "blob": "7569f9ce01f2291bb9c7923d973a88a73de547dd"
+    },
+    "libpiper/src/main/CMakeLists.txt": {
+      "mode": "100644",
+      "blob": "21f3ceb017948e96f9dc6ac2bba5c5063998d5cd"
+    },
+    "libpiper/src/main/main.cpp": {
+      "mode": "100644",
+      "blob": "13e62059bb94506f0f4dd79e4f265584ff808f75"
+    },
+    "libpiper/src/main/utils/main_utils.cpp": {
+      "mode": "100644",
+      "blob": "5999f290df78f9557bbbee656ed8437dba2f7b8c"
+    },
+    "libpiper/src/main/utils/main_utils.hpp": {
+      "mode": "100644",
+      "blob": "a3d63e1998889ee664a599d3e3acdba369ea78c7"
+    },
+    "libpiper/src/main/utils/process.cpp": {
+      "mode": "100644",
+      "blob": "0da550a814ac1cdfe682d61796bf279659889566"
+    },
+    "libpiper/src/main/utils/process.hpp": {
+      "mode": "100644",
+      "blob": "54379d9cb1f1804ef88f4f7d9f9c1dfc296f6bd7"
+    },
+    "libpiper/src/main/utils/wav_headers.cpp": {
+      "mode": "100644",
+      "blob": "e1d835028ed25a07ee1bfe573f1f44bd2df77c9c"
+    },
+    "libpiper/src/main/utils/wav_headers.hpp": {
+      "mode": "100644",
+      "blob": "aa346dd1d42b8e449aba7a87794d4ced5e32896c"
+    },
+    "libpiper/src/main/utils/wavfile.cpp": {
+      "mode": "100644",
+      "blob": "68825556fd20b8e833dc0b37bef0da9e95639562"
+    },
+    "libpiper/src/main/utils/wavfile.hpp": {
+      "mode": "100644",
+      "blob": "4eb2652f9a841f0ed8e0f1c0a37cb50eef69908b"
+    },
+    "libpiper/src/piper.cpp": {
+      "mode": "100644",
+      "blob": "56b61b04f6295482442cf30f6956c3ec94389ce0"
+    },
+    "libpiper/tests/.clang-tidy": {
+      "mode": "100644",
+      "blob": "a15796249a7cf9795c7cdb185b77df64d16ac614"
+    },
+    "libpiper/tests/CMakeLists.txt": {
+      "mode": "100644",
+      "blob": "a80e5b88759f85b87aa10378ac376247f2523a67"
+    },
+    "libpiper/tests/DownloadModel.cmake": {
+      "mode": "100644",
+      "blob": "c6ba45d21eed8254c6826ad35401f336cffad82a"
+    },
+    "libpiper/tests/test_main_utils.cpp": {
+      "mode": "100644",
+      "blob": "d336998591f19c530322a4c67599083220d8aced"
+    },
+    "libpiper/tests/test_piper.cpp": {
+      "mode": "100644",
+      "blob": "2246d29a8bebc48b0c87445aafbb27cb61bec2a3"
+    },
+    "libpiper/tests/test_process.cpp": {
+      "mode": "100644",
+      "blob": "a12483b3fc112a382d6c107650cdcadcf1efb7f2"
+    },
+    "libpiper/tests/test_wav_headers.cpp": {
+      "mode": "100644",
+      "blob": "51f009b6ea5ff61bbba3fcc8b6e761df7ea563d1"
+    },
+    "libpiper/tests/test_wavfile.cpp": {
+      "mode": "100644",
+      "blob": "d9cf2d2f2cf7755551cf3c697ddfeefe56e9ca3d"
+    },
+    "libpiper/tests/utils/piper_test_assets.cpp": {
+      "mode": "100644",
+      "blob": "a9c73e12c68efd2cf3c07a1a66e07c694de014ab"
+    },
+    "libpiper/tests/utils/piper_test_assets.h": {
+      "mode": "100644",
+      "blob": "0bbf6b070127d530be6edfcc84569ffa1fdd7c33"
+    },
+    "licenses/LICENSE.g2pW-Apache-2.0": {
+      "mode": "100644",
+      "blob": "fd4ff66d103d2cf906bccfa05009e10c754c5428"
+    },
+    "mypy.ini": {
+      "mode": "100644",
+      "blob": "c9fb7c82a69ce7be02ffe4f834ba418eacf04e69"
+    },
+    "pylintrc": {
+      "mode": "100644",
+      "blob": "6e03e7ebfee7a122ec2746f6a34f1b65567eef09"
+    },
+    "pyproject.toml": {
+      "mode": "100644",
+      "blob": "f7ceff13b8e8ad9baac91ffd321e08831b37f312"
+    },
+    "pytest.ini": {
+      "mode": "100644",
+      "blob": "c8cd8560c3e24c709dded3099789360a22fe36f0"
+    },
+    "script/dev_build": {
+      "mode": "100755",
+      "blob": "3860b5f7ba882c999e64348c50778a874f3640be"
+    },
+    "script/download_voices": {
+      "mode": "100755",
+      "blob": "bd1bd61f4d8744bf9f897118f354c2a24467c555"
+    },
+    "script/export": {
+      "mode": "100755",
+      "blob": "d6ef26a40b2d9aff51af4d995f57bbaf2319315a"
+    },
+    "script/format": {
+      "mode": "100755",
+      "blob": "16eb86bae8c69f1d2b30b617079ae58380e8a445"
+    },
+    "script/lint": {
+      "mode": "100755",
+      "blob": "b202625e3b20290f697c4deb37bfebe9aea9da41"
+    },
+    "script/package": {
+      "mode": "100755",
+      "blob": "e45d372f363848c9398d79ff221ef08c38f9af1b"
+    },
+    "script/run": {
+      "mode": "100755",
+      "blob": "22f826fb32aba41dbfbac05a101b76af4b1fc961"
+    },
+    "script/run_http_server": {
+      "mode": "100755",
+      "blob": "cb15ed8272eed5a7eae1936d9a35de0f3df518bd"
+    },
+    "script/setup": {
+      "mode": "100755",
+      "blob": "4d4bbd059d34e466246ee55009b33d9a76b1811d"
+    },
+    "script/test": {
+      "mode": "100755",
+      "blob": "98a3068e3bad2d0f8ea8baad9faf4711b78c34ff"
+    },
+    "script/train": {
+      "mode": "100755",
+      "blob": "6b748b236164933f409751b0e79054e68cd2db2d"
+    },
+    "setup.cfg": {
+      "mode": "100644",
+      "blob": "9f11ce6b2618eab2c57e10433d61dd9edfc463da"
+    },
+    "setup.py": {
+      "mode": "100644",
+      "blob": "16f51f273d9c309f93486ce85e2228e8bd3e528c"
+    },
+    "src/piper/__init__.py": {
+      "mode": "100644",
+      "blob": "eb517f35a81b5a2d3cb973d79b331ae44af25396"
+    },
+    "src/piper/__main__.py": {
+      "mode": "100644",
+      "blob": "13f26680f3403713e856d3767bf12b019c8081e6"
+    },
+    "src/piper/audio_playback.py": {
+      "mode": "100644",
+      "blob": "4c20824aa7f7810303c13e79974a41b62f9a6b9b"
+    },
+    "src/piper/config.py": {
+      "mode": "100644",
+      "blob": "3e8497ba7cb8016bb1b07503dbf2664612265e92"
+    },
+    "src/piper/const.py": {
+      "mode": "100644",
+      "blob": "a9eadbb20c5d1d8858c5f72df74498caf708f649"
+    },
+    "src/piper/download_voices.py": {
+      "mode": "100644",
+      "blob": "56fe209bb8fce1fc7a5d63dce87f35ab93bec22c"
+    },
+    "src/piper/espeakbridge.c": {
+      "mode": "100644",
+      "blob": "0da02542caaa6a972da3aa19bef88e0831d8118a"
+    },
+    "src/piper/espeakbridge.pyi": {
+      "mode": "100644",
+      "blob": "637209d12bde9ff73e5cfaef357e6f709ecfacf0"
+    },
+    "src/piper/g2pw_onnx.py": {
+      "mode": "100644",
+      "blob": "f7c973c55de9600a94a1bf31ce12a92275f75bf2"
+    },
+    "src/piper/hebrew/LICENSE": {
+      "mode": "100644",
+      "blob": "14a516c8825c44f9aae64503b45a9031ce0aadf7"
+    },
+    "src/piper/hebrew/SOURCE": {
+      "mode": "100644",
+      "blob": "bbd2410702b34c0d26c69d56a6b6197458bd236a"
+    },
+    "src/piper/hebrew/__init__.py": {
+      "mode": "100644",
+      "blob": "a4a1150d23e6da79ed0b9f28731a12c0dfc4ed3b"
+    },
+    "src/piper/hebrew/hebrew_ipa.py": {
+      "mode": "100644",
+      "blob": "19877b4249486654790989a5253c3288e6552f92"
+    },
+    "src/piper/hebrew/nakdimon.onnx": {
+      "mode": "100644",
+      "blob": "3294b68333d8b6b2572845495818b19b4c036309"
+    },
+    "src/piper/http_server.py": {
+      "mode": "100644",
+      "blob": "901d6ae0626bcca37013bfb01617beb3261e0f3f"
+    },
+    "src/piper/img/logo.png": {
+      "mode": "100644",
+      "blob": "2b276be25ab30c51bb156a4a365e1a79a35937f7"
+    },
+    "src/piper/img/ohf-library.png": {
+      "mode": "100644",
+      "blob": "f30ecf6187ba2b88a092a7a3d3adc81ca4191b1f"
+    },
+    "src/piper/lithuanian/LICENSE": {
+      "mode": "100644",
+      "blob": "049fe036e7adb5c2313a8c55c672e1d293c35093"
+    },
+    "src/piper/lithuanian/SOURCE": {
+      "mode": "100644",
+      "blob": "9a41c863af28e76720779a05a67ab3f5367b1ff9"
+    },
+    "src/piper/lithuanian/lt_kirciai.tsv": {
+      "mode": "100644",
+      "blob": "2d217298c2d5f8aafe804424899aac0d8f258e5c"
+    },
+    "src/piper/lithuanian/lt_kreipiniai.tsv": {
+      "mode": "100644",
+      "blob": "ed74d347cdc88a44bf6caf1cdd58409f357cee14"
+    },
+    "src/piper/lithuanian/lt_raides.tsv": {
+      "mode": "100644",
+      "blob": "aaece5d43fbf22391827a3b770376368018c6b85"
+    },
+    "src/piper/patch_voice_with_alignment.py": {
+      "mode": "100644",
+      "blob": "6487a9b73c80ab7e7a281d420938b39a3c13dd71"
+    },
+    "src/piper/phoneme_ids.py": {
+      "mode": "100644",
+      "blob": "58bbc8c405653c6caebad8f6f29688f00f106686"
+    },
+    "src/piper/phonemize_chinese.py": {
+      "mode": "100644",
+      "blob": "4169d66d7d3ea9a4b1b2b83b78e2ca151e9db6ed"
+    },
+    "src/piper/phonemize_espeak.py": {
+      "mode": "100644",
+      "blob": "6ba6d9ddb408007f605448a1adb7b7e286824d31"
+    },
+    "src/piper/phonemize_hebrew.py": {
+      "mode": "100644",
+      "blob": "53edf5869ee796fcb42d54637eac1cf3c966993f"
+    },
+    "src/piper/phonemize_japanese.py": {
+      "mode": "100644",
+      "blob": "1f4b32998d767308586859b099784ab7a31c6002"
+    },
+    "src/piper/phonemize_lithuanian.py": {
+      "mode": "100644",
+      "blob": "0b7d96372956e58a34076177d3cc3a28986dfaa8"
+    },
+    "src/piper/phonemize_thai.py": {
+      "mode": "100644",
+      "blob": "3664989efa27fe6d94ba245ed83d568a24e607d7"
+    },
+    "src/piper/py.typed": {
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "src/piper/tashkeel/LICENSE": {
+      "mode": "100644",
+      "blob": "148899cd92464c043327eccc7742389a77089554"
+    },
+    "src/piper/tashkeel/SOURCE": {
+      "mode": "100644",
+      "blob": "3c5e926616bb243c24fa86a305a33ca5c850e679"
+    },
+    "src/piper/tashkeel/__init__.py": {
+      "mode": "100644",
+      "blob": "376db023636449a8892b7bd046a6a28d162d1ac0"
+    },
+    "src/piper/tashkeel/hint_id_map.json": {
+      "mode": "100644",
+      "blob": "db33128994fc4f35a177061807059dff7bb6275f"
+    },
+    "src/piper/tashkeel/input_id_map.json": {
+      "mode": "100644",
+      "blob": "d9e3933d933ed8b3cf2f545e38121444af185b17"
+    },
+    "src/piper/tashkeel/model.onnx": {
+      "mode": "100644",
+      "blob": "556eb5b16e00f77d14edb8cfb99e0f366aa98b3c"
+    },
+    "src/piper/tashkeel/target_id_map.json": {
+      "mode": "100644",
+      "blob": "a1d91c94b24c2704929384285c134095d6602220"
+    },
+    "src/piper/templates/index.html": {
+      "mode": "100644",
+      "blob": "e032411bf4cfa1cbc85cb8446a3f1edece7ed48d"
+    },
+    "src/piper/train/__init__.py": {
+      "mode": "100644",
+      "blob": "4b8fb07eafe9091114876aaba667e7192b2e295c"
+    },
+    "src/piper/train/__main__.py": {
+      "mode": "100644",
+      "blob": "e07c7996d013cfa370c9c71c1723c8a528c93179"
+    },
+    "src/piper/train/export_generator.py": {
+      "mode": "100644",
+      "blob": "630ae497bc1a2f6746403a78d47d3dcfb2c04761"
+    },
+    "src/piper/train/export_onnx.py": {
+      "mode": "100644",
+      "blob": "96f28724fea1288de2aedd7856d1a91783fc806e"
+    },
+    "src/piper/train/infer_torch.py": {
+      "mode": "100644",
+      "blob": "27f36d3d45a83ede7375b3ad10eb37ad5ceade70"
+    },
+    "src/piper/train/vits/__init__.py": {
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "src/piper/train/vits/attentions.py": {
+      "mode": "100644",
+      "blob": "50364adc8de2f0693a8542c263a903fea1f61127"
+    },
+    "src/piper/train/vits/commons.py": {
+      "mode": "100644",
+      "blob": "3f334c3a0c4ac89b0b974d07233266b752eee3de"
+    },
+    "src/piper/train/vits/config.py": {
+      "mode": "100644",
+      "blob": "cd09f098d7305c0be599f31423bcb5dcaeaf9fd9"
+    },
+    "src/piper/train/vits/dataset.py": {
+      "mode": "100644",
+      "blob": "94600ea75bc6fd5882cc7f74b1fd94e14e675455"
+    },
+    "src/piper/train/vits/lightning.py": {
+      "mode": "100644",
+      "blob": "dad0dce388703de6da68138b25a004310f31ed95"
+    },
+    "src/piper/train/vits/losses.py": {
+      "mode": "100644",
+      "blob": "ec327e587668e2e9a0922767eae586aa6eb554fc"
+    },
+    "src/piper/train/vits/mel_processing.py": {
+      "mode": "100644",
+      "blob": "72e81e241b893eef09ec522121d07c02137454b5"
+    },
+    "src/piper/train/vits/models.py": {
+      "mode": "100644",
+      "blob": "5c0bd8f306ed4d220480ab72e49492160894d94c"
+    },
+    "src/piper/train/vits/modules.py": {
+      "mode": "100644",
+      "blob": "656e497531d6f394d52fa756277ad1cd86f11fbd"
+    },
+    "src/piper/train/vits/monotonic_align/Makefile": {
+      "mode": "100644",
+      "blob": "017c6e73b2c1fb6b244349c522713b6b6c89452f"
+    },
+    "src/piper/train/vits/monotonic_align/__init__.py": {
+      "mode": "100644",
+      "blob": "5dd2a4352f688cb315b15d34c5955d0953e5a376"
+    },
+    "src/piper/train/vits/monotonic_align/core.pyx": {
+      "mode": "100644",
+      "blob": "bfaabd4d21c2299cdd978f0cc0caefa20ad186e5"
+    },
+    "src/piper/train/vits/monotonic_align/setup.py": {
+      "mode": "100644",
+      "blob": "ce87738309f9c59c89a976bd18a704d0a9066e2b"
+    },
+    "src/piper/train/vits/mos.py": {
+      "mode": "100644",
+      "blob": "ccb53f3eab91b5c020d326d4f08a58c0e1900f43"
+    },
+    "src/piper/train/vits/transforms.py": {
+      "mode": "100644",
+      "blob": "329862fba138a68f257207b7809699a2a3536e74"
+    },
+    "src/piper/train/vits/utils.py": {
+      "mode": "100644",
+      "blob": "6cfd3613bea541763280ad1ee485807f05251b39"
+    },
+    "src/piper/voice.py": {
+      "mode": "100644",
+      "blob": "cec608c9afdd7133e7cae0f54e33d84ed0ee2738"
+    },
+    "tests/__init__.py": {
+      "mode": "100644",
+      "blob": "a095dcef8397dfc8cdef5758b3b97be7bc9af41b"
+    },
+    "tests/generate_test_voice.py": {
+      "mode": "100644",
+      "blob": "3ed48f3bab2f96e016153f3eb2b748a72e148fcd"
+    },
+    "tests/test_chinese_phonemizer.py": {
+      "mode": "100644",
+      "blob": "55525367a7cc15835d63545b16938ccdfcfccf41"
+    },
+    "tests/test_download_voices.py": {
+      "mode": "100644",
+      "blob": "5ba2d19efa14d239a61544bea8dfcfebfc682531"
+    },
+    "tests/test_espeak_phonemizer.py": {
+      "mode": "100644",
+      "blob": "856e151e6cd0121dee6246318f6f5115ad4301d8"
+    },
+    "tests/test_hebrew_phonemizer.py": {
+      "mode": "100644",
+      "blob": "95ea6318e6e6b3fb631255256a8426f45718313f"
+    },
+    "tests/test_japanese_phonemizer.py": {
+      "mode": "100644",
+      "blob": "8adcd032bbf6afab6b95788612798d0d7bb184f5"
+    },
+    "tests/test_lithuanian_phonemizer.py": {
+      "mode": "100644",
+      "blob": "3c9f24d9793546fb36b19d68bf5abe16a759153d"
+    },
+    "tests/test_piper.py": {
+      "mode": "100644",
+      "blob": "44e6ac7055335aac71279543c5ff6fc3668a8790"
+    },
+    "tests/test_tashkeel.py": {
+      "mode": "100644",
+      "blob": "a5cfacf8c6c84ec21d1c6a996a8afd1f10dd9294"
+    },
+    "tests/test_thai_phonemizer.py": {
+      "mode": "100644",
+      "blob": "5cdd4c65efa822264159bdd0e6edf82e098f2d29"
+    },
+    "tests/test_voice.onnx": {
+      "mode": "100644",
+      "blob": "b7962c87d9a7d2dd5492f68aef191479f224f194"
+    },
+    "tests/test_voice.onnx.json": {
+      "mode": "100644",
+      "blob": "c100b8a1a46f2fbd0ff8c124620631b146478296"
+    },
+    "tox.ini": {
+      "mode": "100644",
+      "blob": "d6ada3d6d55075b4ff40a30dd1ad81278e4f7a88"
+    }
+  },
+  "frozen_prefixes": [],
+  "authority_hashes": {},
+  "required_text": {},
+  "structured_files": {
+    "governance/interim-release-policy.json": {
+      "schema_version": 1,
+      "policy_kind": "source_merge",
+      "repository": "appolon1908/Codestra-TTS-Piper",
+      "authorization_date": "2026-11-02",
+      "required_checks": [
+        {
+          "context": "frozen-vendor-documentation-source",
+          "integration_id": 15368,
+          "workflow": ".github/workflows/source-scope.yml"
+        }
+      ],
+      "replaces_contexts": [
+        "codestra-control-plane",
+        "codestra/control-plane"
+      ],
+      "preserve": [
+        "other_required_checks",
+        "review_requirements",
+        "ref_conditions",
+        "bypass_actors",
+        "enforcement",
+        "force_push_protection",
+        "deletion_protection",
+        "deployment_authority"
+      ],
+      "production_activation_authorized": false,
+      "note": "Only documentation additions outside the frozen baseline are validated. Every original vendor, config, lock and authority Git blob/mode remains immutable. This does not certify vendor code, runtime or vendor security and does not authorize deployment."
+    }
+  }
+}
